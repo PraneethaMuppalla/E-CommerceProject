@@ -21,9 +21,9 @@ export const YouTubeIcon = () => {
           y2="41.301"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#f44f5a"></stop>
-          <stop offset=".443" stop-color="#ee3d4a"></stop>
-          <stop offset="1" stop-color="#e52030"></stop>
+          <stop offset="0" stopColor="#f44f5a"></stop>
+          <stop offset=".443" stopColor="#ee3d4a"></stop>
+          <stop offset="1" stopColor="#e52030"></stop>
         </linearGradient>
         <path
           fill="url(#PgB_UHa29h0TpFV_moJI9a_9a46bTk3awwI_gr1)"
@@ -65,13 +65,13 @@ export const WhatsAppIcon = () => {
           y2="56.31"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#4caf50"></stop>
-          <stop offset=".489" stop-color="#4aaf50"></stop>
-          <stop offset=".665" stop-color="#43ad50"></stop>
-          <stop offset=".79" stop-color="#38aa50"></stop>
-          <stop offset=".892" stop-color="#27a550"></stop>
-          <stop offset=".978" stop-color="#11a050"></stop>
-          <stop offset="1" stop-color="#0a9e50"></stop>
+          <stop offset="0" stopColor="#4caf50"></stop>
+          <stop offset=".489" stopColor="#4aaf50"></stop>
+          <stop offset=".665" stopColor="#43ad50"></stop>
+          <stop offset=".79" stopColor="#38aa50"></stop>
+          <stop offset=".892" stopColor="#27a550"></stop>
+          <stop offset=".978" stopColor="#11a050"></stop>
+          <stop offset="1" stopColor="#0a9e50"></stop>
         </linearGradient>
         <path
           fill="url(#tS~Tu1dsT5kMXF2Lct~HUa_G9XXzb9XaEKX_gr1)"
@@ -113,8 +113,8 @@ export const FaceBookIcon = () => {
           y2="40.615"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#2aa4f4"></stop>
-          <stop offset="1" stop-color="#007ad9"></stop>
+          <stop offset="0" stopColor="#2aa4f4"></stop>
+          <stop offset="1" stopColor="#007ad9"></stop>
         </linearGradient>
         <path
           fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"

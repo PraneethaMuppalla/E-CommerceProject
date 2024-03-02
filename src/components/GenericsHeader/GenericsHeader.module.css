@@ -3,10 +3,11 @@
   background-color: #777;
   color: white;
   text-align: center;
+  font-family: Metal, Mania;
 }
 .container h1 {
-  padding-bottom: 40px;
-  font-size: 100px;
+  padding-bottom: 30px;
+  font-size: 80px;
 }
 
 @media (max-width: 768px) {

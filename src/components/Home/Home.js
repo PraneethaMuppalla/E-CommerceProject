@@ -1,6 +1,5 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
 import classes from "./Home.module.css";
 
 const DUMMY_TOURS = [

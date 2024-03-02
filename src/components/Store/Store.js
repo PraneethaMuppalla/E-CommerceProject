@@ -13,7 +13,7 @@ const Store = () => {
     <Container className="text-center mt-3 ">
       <Row className="mb-4 mb-md-3">
         <Col>
-          <h2> Music</h2>
+          <h2 className={classes.heading}> Music</h2>
         </Col>
       </Row>
       <div
@@ -25,6 +25,9 @@ const Store = () => {
               imageUrl={album.imageUrl}
               pos={i + 1}
               price={album.price}
+              title={album.title}
+              id={album.id}
+              key={album.id}
             />
           );
         })}

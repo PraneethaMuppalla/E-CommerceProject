@@ -1,9 +1,23 @@
 .cont {
   width: "90 %";
+  font-family: Metal, Mania;
 }
 
+.heading {
+  font-family: "Metal Mania";
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
 .ind-cont {
   margin: 0 3% 0 3%;
+  font-size: 1.15rem;
+}
+.ind-cont h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .image-container {
