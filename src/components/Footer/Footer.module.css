@@ -1,0 +1,32 @@
+.container {
+  background-color: #56ccf2;
+  color: white;
+  text-align: center;
+  font-family: Metal, Mania;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container h1 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+.container ul {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    padding: 10px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 552px) {
+  .container h1 {
+    padding: 10px;
+    font-size: 25px;
+  }
+}

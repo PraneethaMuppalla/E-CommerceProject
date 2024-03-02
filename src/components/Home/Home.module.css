@@ -1,0 +1,41 @@
+.cont {
+  width: 90%;
+  margin: auto;
+  font-family: Metal, Mania;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1092px) {
+  .cont {
+    width: 70%;
+  }
+}
+
+.bordered-row {
+  border-bottom: 1px solid rgb(78, 74, 74);
+}
+
+.each-col {
+  white-space: nowrap;
+  padding-bottom: 0px;
+  color: #777;
+}
+.heading {
+  font-family: "Metal Mania";
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.each-col button {
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 5px 20px;
+  background-color: #56ccf2;
+}
+
+/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+/* font-family:"Metal Mania"; */
