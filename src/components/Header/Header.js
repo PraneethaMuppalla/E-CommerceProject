@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import HeaderCartButton from "./HeaderCartButton";
 import classes from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
@@ -21,9 +22,15 @@ const Header = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto  fs-5 ">
-            <Nav.Link href="#link">Home</Nav.Link>
-            <Nav.Link href="#link">Store</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
+            <NavLink to="/" className="nav-link d-inline me-3">
+              Home
+            </NavLink>
+            <NavLink to="/store" className="nav-link d-inline me-3">
+              Store
+            </NavLink>
+            <NavLink to="/about" className="nav-link d-inline me-3">
+              About
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
         <Nav>
