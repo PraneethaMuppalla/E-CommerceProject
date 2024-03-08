@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
@@ -6,19 +6,14 @@ import GenericsHeader from "../components/GenericsHeader/GenericsHeader";
 import Footer from "../components/Footer/Footer";
 import Cart from "../components/Cart/Cart";
 import classes from "./Root.module.css";
+import WebContext from "../context/web-context";
 
 const Root = () => {
-  const [cartVisible, setCartVisible] = useState(false);
-  const showCartHandler = () => {
-    setCartVisible(true);
-  };
-  const hideCartHandler = () => {
-    setCartVisible(false);
-  };
+  const ctx = useContext(WebContext);
   return (
     <div>
-      <Header onShowCart={showCartHandler} />
-      {cartVisible && <Cart onHideCart={hideCartHandler} />}
+      <Header onShowCart={ctx.showCart} />
+      {ctx.cartVisible && <Cart onHideCart={ctx.hideCart} />}
       <main className={classes.container}>
         <GenericsHeader />
         <Outlet />

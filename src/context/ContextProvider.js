@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 
 import WebContext from "./web-context";
 
@@ -61,6 +61,14 @@ const webContextReducer = (state, action) => {
 };
 
 const ContextProvider = (props) => {
+  const [cartVisible, setCartVisible] = useState(false);
+  const showCartHandler = () => {
+    setCartVisible(true);
+  };
+  const hideCartHandler = () => {
+    setCartVisible(false);
+  };
+
   const [webContextState, dispatchWebContext] = useReducer(
     webContextReducer,
     defaultWebContextState
@@ -89,6 +97,9 @@ const ContextProvider = (props) => {
     addToCart: addToCartHandler,
     deleteFromCart: removeFromCartHandler,
     totalAmount: webContextState.totalAmount,
+    showCart: showCartHandler,
+    hideCart: hideCartHandler,
+    cartVisible: cartVisible,
   };
   return (
     <WebContext.Provider value={webContext}>

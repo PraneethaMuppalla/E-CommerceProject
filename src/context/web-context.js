@@ -6,6 +6,9 @@ const WebContext = React.createContext({
   totalAmount: 0,
   addToCart: (item) => {},
   deleteFromCart: (id) => {},
+  showCart: () => {},
+  hideCart: () => {},
+  cartVisible: false,
 });
 
 export default WebContext;

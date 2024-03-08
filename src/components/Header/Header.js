@@ -16,12 +16,12 @@ const Header = (props) => {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand className="fs-3" href="#home">
+        {/* <Navbar.Brand className="fs-3" href="#home">
           The Generics
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto  fs-5 ">
+          <Nav className=" fs-5 ">
             <NavLink to="/" className="nav-link d-inline me-3">
               Home
             </NavLink>
