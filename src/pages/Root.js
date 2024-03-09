@@ -12,7 +12,7 @@ const Root = () => {
   const ctx = useContext(WebContext);
   return (
     <div>
-      <Header onShowCart={ctx.showCart} />
+      <Header isCartVisible={true} />
       {ctx.cartVisible && <Cart onHideCart={ctx.hideCart} />}
       <main className={classes.container}>
         <GenericsHeader />

@@ -1,6 +1,5 @@
 import { useState, useRef, useContext } from "react";
 
-import { useNavigate } from "react-router-dom";
 import WebContext from "../../context/web-context";
 import classes from "./Login.module.css";
 
@@ -8,7 +7,7 @@ const Login = () => {
   const ctx = useContext(WebContext);
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
-  const navigate = useNavigate();
+
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setisLoading] = useState(false);
 
@@ -58,7 +57,6 @@ const Login = () => {
       .then((data) => {
         console.log(data);
         ctx.login(data.idToken);
-        navigate("/store");
       })
       .catch((err) => {
         alert(err.message);
