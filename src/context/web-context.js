@@ -9,6 +9,10 @@ const WebContext = React.createContext({
   showCart: () => {},
   hideCart: () => {},
   cartVisible: false,
+  token: "",
+  isLoggedIn: false,
+  login: (token) => {},
+  logout: () => {},
 });
 
 export default WebContext;

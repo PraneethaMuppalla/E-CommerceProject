@@ -31,6 +31,9 @@ const Header = (props) => {
             <NavLink to="/about" className="nav-link d-inline me-3">
               About
             </NavLink>
+            <NavLink to="/login" className="nav-link d-inline me-3">
+              Login
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
         <Nav>

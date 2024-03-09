@@ -61,6 +61,10 @@ const webContextReducer = (state, action) => {
 };
 
 const ContextProvider = (props) => {
+  const tokenData = localStorage.getItem("token");
+  const [token, setToken] = useState(tokenData);
+  const userLoggedIn = !!token;
+
   const [cartVisible, setCartVisible] = useState(false);
   const showCartHandler = () => {
     setCartVisible(true);
@@ -91,6 +95,16 @@ const ContextProvider = (props) => {
       id,
     });
   };
+
+  const loginHandler = (token) => {
+    localStorage.setItem("token", token);
+    setToken(token);
+  };
+  const logoutHandler = () => {
+    localStorage.removeItem("token");
+    setToken(null);
+  };
+
   const webContext = {
     musicAlbums: DUMMY_ITEMS,
     cartItems: webContextState.cartItems,
@@ -100,6 +114,10 @@ const ContextProvider = (props) => {
     showCart: showCartHandler,
     hideCart: hideCartHandler,
     cartVisible: cartVisible,
+    token: token,
+    isLoggedIn: userLoggedIn,
+    login: loginHandler,
+    logout: logoutHandler,
   };
   return (
     <WebContext.Provider value={webContext}>
